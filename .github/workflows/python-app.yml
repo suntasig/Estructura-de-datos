@@ -1,5 +1,3 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-
 name: Python application
 
 on:
@@ -28,5 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
+    - name: Test
+      run: python -c "print('Prueba exitosa')"
     - name: Test con Python
       run: python -c "print('Prueba exitosa')"
