@@ -28,5 +28,3 @@ jobs:
         
     - name: Test
       run: python -c "print('Prueba exitosa')"
-    - name: Test con Python
-      run: python -c "print('Prueba exitosa')"
